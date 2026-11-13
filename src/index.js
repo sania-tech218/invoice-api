@@ -10,7 +10,7 @@ const invoices = [
   { id: 2, customer: "Khan & Sons", amount: 8200, status: "pending" },
 ];
 
-app.get("/health", (req, res) => res.json({ status: "ok" }));
+app.get("/health", (req, res) => res.json({ status: "ok v2" }));
 app.get("/invoices", (req, res) => res.json(invoices));
 
 const port = process.env.PORT || 4000;
